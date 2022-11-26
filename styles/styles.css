@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+:root {
+  --background-color: hsl(225, 100%, 94%);
+  --heading-color: hsl(223, 47%, 23%);
+  --container-color: hsl(225, 100%, 98%);
+  --normal-text-color: hsl(224, 23%, 55%);
+  --button-color: hsl(245, 75%, 52%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+  font-size: 16px;
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container {
+  width: 300px;
+  border-radius: 15px;
+  background-color: white;
+  margin: auto;
+}
+.container .order-image {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.container .order-summary {
+  padding: 0 1.25em;
+}
+.container .order-summary h1 {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  font-size: 1.25em;
+  color: var(--heading-color);
+  text-align: center;
+  margin: 1em 0;
+}
+.container .order-summary .summary {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  font-size: 0.8em;
+  text-align: center;
+  line-height: 1.75em;
+  color: var(--normal-text-color);
+}
+.container .order-summary .plan-container {
+  margin: 1.25em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--container-color);
+  padding: 1em;
+  border-radius: 10px;
+}
+.container .order-summary .plan-container .info {
+  padding-right: 1em;
+}
+.container .order-summary .plan-container .info .subscription {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  font-size: 0.9em;
+  color: var(--heading-color);
+}
+.container .order-summary .plan-container .info .subscription-cost {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  font-size: 0.9em;
+  color: var(--normal-text-color);
+}
+.container .order-summary .change-subscription {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  font-size: 0.8em;
+  color: var(--button-color);
+}
+.container .order-summary .change-subscription:hover {
+  opacity: 0.75;
+  text-decoration: none;
+}
+.container .proceed-to-payment {
+  width: 100%;
+  display: block;
+  text-align: center;
+  background-color: var(--button-color);
+  padding: 1.1em 4em;
+  border-radius: 10px;
+  margin-top: 1.25em;
+  color: var(--container-color);
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  font-size: 0.8em;
+  text-decoration: none;
+}
+.container .proceed-to-payment:hover {
+  opacity: 0.75;
+}
+.container .cancel-order {
+  text-align: center;
+  color: var(--normal-text-color);
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  font-size: 0.85em;
+  text-decoration: none;
+  margin: 2em 0;
+  width: 100%;
+  display: inline-block;
+}
+.container .cancel-order:hover {
+  color: var(--heading-color);
+}
+
+.attribution {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  font-family: "Red Hat Display", sans-serif;
+  margin: 0 0 0.25em 0.25em;
+  font-size: 0.85em;
+}
+.attribution a {
+  text-decoration: none;
+}/*# sourceMappingURL=styles.css.map */
